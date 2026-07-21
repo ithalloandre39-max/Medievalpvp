@@ -1,0 +1,18 @@
+[gd_scene load_steps=6 format=3]
+
+[node name="Enemy" type="CharacterBody2D"]
+# Root node for the enemy
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Enemy"]
+# sprite placeholder - assign SpriteFrames in the editor
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy"]
+# Configure a Shape (e.g., RectangleShape2D or CapsuleShape2D) in the editor
+
+[node name="Marker2D" type="Marker2D" parent="Enemy"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Enemy"]
+# Add animations in the editor as needed
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Enemy"]
+# Use for enemy SFX (attach AudioStream resource in the editor)
